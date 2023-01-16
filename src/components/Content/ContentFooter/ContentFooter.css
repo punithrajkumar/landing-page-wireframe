@@ -1,0 +1,328 @@
+.contentFooterContainer {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.Services {
+  grid-area: Services;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.Services,
+.Policies,
+.About,
+.Address,
+.Subscribe {
+  color: silver;
+}
+
+.Services span h3,
+.Policies span h3,
+.About span h3,
+.Address span h3,
+.Subscribe span h3 {
+  color: black;
+  font-weight: 900;
+  margin-bottom: 0.8rem;
+}
+.socialMedia {
+  margin-top: 1rem;
+}
+.socialMedia img {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.footerInput {
+  border-radius: 5%;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+.footerInput input {
+  background-color: #f5f5f5;
+  border: none;
+  height: 3rem;
+  width: 70%;
+  outline: none;
+}
+.footerInput button {
+  border: none;
+  outline: none;
+}
+.footerInput input,
+.footerInput button,
+.footerInput button img {
+  height: 3rem;
+}
+
+.footerInput button {
+  cursor: pointer;
+}
+
+.footerInput input::placeholder {
+  color: silver;
+
+  font-size: larger;
+}
+
+.bH1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.hPC1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.hPC2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.hPC3 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.bH3 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.qH1 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.qH2 {
+  bottom: 10rem;
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+
+.qH3 {
+  bottom: 10rem;
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+
+.bH2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.Services {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+.Policies {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.About {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.Address {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+.Subscribe {
+  position: relative;
+  top: 5rem;
+  margin-bottom: 0;
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
+
+.socialMedia {
+  align-self: end;
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+
+.footerPage {
+  grid-column: 1/3;
+  grid-row: 9/10;
+  color: silver;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 786px) {
+  .contentFooterContainer {
+    width: 100%;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+  }
+  .bH1 {
+    grid-row: 1/2;
+  }
+  .hPC1 {
+    grid-row: 2/3;
+  }
+  .hPC2 {
+    grid-row: 3/4;
+  }
+  .bH3 {
+    grid-row: 4/5;
+  }
+  .qH1 {
+    grid-row: 5/6;
+  }
+  .qH2 {
+    grid-row: 6/7;
+  }
+
+  .bH1,
+  .hPC1,
+  .hPC2,
+  .bH3,
+  .qH1,
+  .qH2 {
+    grid-column: 1/3;
+  }
+
+  .bH2,
+  .hPC3,
+  .qH3 {
+    display: none;
+  }
+
+  .Services {
+    grid-row: 7/9;
+    grid-column: 1/2;
+  }
+
+  .Policies {
+    grid-row: 7/8;
+    grid-column: 2/3;
+  }
+
+  .About {
+    grid-row: 9/10;
+    grid-column: 1/2;
+  }
+  .Address {
+    grid-row: 8/10;
+    grid-column: 2/3;
+  }
+  .Subscribe {
+    position: relative;
+    top: 1rem;
+    grid-row: 10/11;
+    grid-column: 1/2;
+  }
+  .socialMedia {
+    position: relative;
+    bottom: 7rem;
+    grid-row: 10/11;
+    grid-column: 2/3;
+  }
+  .footerPage {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-row: 11/12;
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 694px) {
+  .contentFooterContainer {
+    width: 100%;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+  }
+  .bH1 {
+    grid-row: 1/2;
+  }
+  .hPC1 {
+    grid-row: 2/3;
+  }
+  .hPC2 {
+    grid-row: 3/4;
+  }
+  .bH3 {
+    grid-row: 4/5;
+  }
+  .qH1 {
+    grid-row: 5/6;
+  }
+  .qH2 {
+    grid-row: 6/7;
+  }
+
+  .bH2,
+  .hPC3,
+  .qH3 {
+    display: none;
+  }
+
+  .Services {
+    grid-row: 7/8;
+    text-align: center;
+  }
+
+  .Policies {
+    grid-row: 8/9;
+    text-align: center;
+  }
+
+  .About {
+    grid-row: 9/10;
+    text-align: center;
+  }
+  .Address {
+    grid-row: 10/11;
+    text-align: center;
+  }
+  .Subscribe {
+    position: relative;
+    top: 0rem;
+    grid-row: 11/12;
+    text-align: center;
+  }
+  .socialMedia {
+    position: relative;
+    bottom: 0rem;
+    grid-row: 12/13;
+    text-align: center;
+  }
+  .footerInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerPage {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-row: 13/14;
+  }
+  .bH1,
+  .hPC1,
+  .hPC2,
+  .bH3,
+  .qH1,
+  .qH2,
+  .Services,
+  .Policies,
+  .About,
+  .Address,
+  .Subscribe,
+  .socialMedia,
+  .footerPage {
+    grid-column: 1/3;
+  }
+}

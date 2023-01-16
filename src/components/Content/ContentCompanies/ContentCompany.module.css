@@ -1,0 +1,85 @@
+.contentCompany {
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+}
+
+.contentCompany h2,
+.contentCompany img,
+.contentCompany p {
+}
+
+.contentCompany h2 {
+  font-size: 1.3rem;
+}
+
+.contentCompany img {
+  width: 2.2rem;
+}
+.contentCompany p {
+  color: gray;
+  font-size: 1rem;
+}
+
+.contentCompany a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: orange;
+}
+.contentCompany .contentImageCenter,
+.contentCompany h2,
+.contentCompany p {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 786px) {
+  .contentCompany .contentImageCenter {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .contentCompany h2,
+  .contentCompany a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.containerCompanies {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.companyCol1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.companyCol2 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.companyCol3 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+@media screen and (min-width: 280px) and (max-width: 694px) {
+  .contentCompany h2 {
+    font-size: 1rem;
+  }
+
+  .contentCompany img {
+    width: 2rem;
+  }
+  .contentCompany p {
+    color: gray;
+    font-size: 1rem;
+  }
+
+  .contentCompany a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: orange;
+  }
+}

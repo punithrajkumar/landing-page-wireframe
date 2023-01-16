@@ -1,0 +1,551 @@
+.contentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.contentHead {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.contentHead2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.contentButton {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.contentImage {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  width: 100%;
+}
+.contentMid {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.contentFooter {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  margin-bottom: 5rem;
+  margin-left: 12rem;
+  margin-right: 12em;
+}
+
+.contentHead .contentTopic {
+  margin-bottom: 0.5rem;
+}
+.contentHead h1,
+.contentHead2 p {
+  margin-bottom: 1.5rem;
+}
+
+.contentHead,
+.contentHead2,
+.contentButton,
+.contentMid,
+.contentFooter {
+  box-sizing: border-box;
+}
+
+.contentTopic {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: royalblue;
+}
+
+.contentHead h1 .underline,
+.contentFooter h2 .underline {
+  text-decoration: underline solid 0.45rem orange;
+  text-underline-position: under;
+}
+.contentHead2 .contentParagraph,
+.contentParagraph2 {
+  color: silver;
+}
+
+.contentHead2 .contentParagraph h3,
+.contentParagraph2 p {
+  font-size: 1.3rem;
+}
+
+.contentHead2 .contentParagraph h3 {
+  margin-bottom: 0.5rem;
+}
+
+.contentImage img {
+  display: flex;
+  width: 50vw;
+  height: fit-content;
+  object-fit: fill;
+}
+
+.contentButton .contentButtonCenter button {
+  cursor: pointer;
+  width: auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  outline: none;
+  border: none;
+}
+.contentButton .contentButtonCenter button:nth-child(1) {
+  background-color: royalblue;
+  border-top: 0.1rem solid royalblue;
+  border-bottom: 0.1rem solid royalblue;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.contentButton .contentButtonCenter button:nth-child(2) {
+  background-color: white;
+  color: royalblue;
+  border-top: 0.1rem solid royalblue;
+  border-bottom: 0.1rem solid royalblue;
+  border-right: 0.1rem solid royalblue;
+  border-radius: 0 5px 5px 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.contentMid p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: royalblue;
+}
+
+.contentMid img {
+  display: flex;
+  border: 0.15rem solid royalblue;
+  border-radius: 100%;
+}
+
+.contentFooter h2,
+.contentFooter .contentParagraph2 {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.contentFooter h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+.logoDown {
+  margin-left: 0.5rem;
+}
+.logoDown img {
+  padding-right: 0.044rem;
+  padding-bottom: 0.1rem;
+}
+
+@media screen and (max-width: 1148px) {
+  .contentButton button:nth-child(1) {
+    background-color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    color: white;
+    border-radius: 5px 0 0 5px;
+  }
+  .contentButton button:nth-child(2) {
+    background-color: white;
+    color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    border-right: 0.1rem solid royalblue;
+    border-radius: 0 5px 5px 0;
+  }
+}
+@media screen and (max-width: 1071px) {
+  .contentButton .contentButtonCenter button:nth-child(1) {
+    background-color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .contentButton .contentButtonCenter button:nth-child(2) {
+    background-color: white;
+    color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    border-right: 0.1rem solid royalblue;
+    border-radius: 0 5px 5px 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 1004px) {
+  .contentButton .contentButtonCenter button {
+    cursor: pointer;
+    width: auto;
+    font-size: 0.95rem;
+    font-weight: 200;
+    outline: none;
+    border: none;
+  }
+  .contentButton button:nth-child(1) {
+    background-color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    padding-left: 0.09rem;
+    padding-right: 0.09rem;
+  }
+  .contentButton button:nth-child(2) {
+    background-color: white;
+    color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    border-right: 0.1rem solid royalblue;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border-radius: 0 5px 5px 0;
+  }
+}
+@media screen and (max-width: 872px) {
+  .contentButton .contentButtonCenter button {
+    cursor: pointer;
+    width: auto;
+    font-size: 0.75rem;
+    font-weight: 200;
+    outline: none;
+    border: none;
+  }
+  .contentButton button:nth-child(1) {
+    background-color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    padding-left: 0.07rem;
+    padding-right: 0.07rem;
+  }
+  .contentButton button:nth-child(2) {
+    background-color: white;
+    color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    border-right: 0.1rem solid royalblue;
+    padding-left: 0.075rem;
+    padding-right: 0.075rem;
+    border-radius: 0 5px 5px 0;
+  }
+}
+@media screen and (max-width: 786px) {
+  .contentContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .contentHead {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .contentImage {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .contentHead2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .contentButton {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .contentMid {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    display: block;
+  }
+  .contentFooter {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+
+  .contentHead p {
+    font-size: 1.7rem;
+    font-weight: bolder;
+  }
+  .contentHead h1 {
+    font-weight: bolder;
+    font-size: 2.7rem;
+  }
+  .contentImage img {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+  }
+  .contentHead2 .contentTopic,
+  .contentHead2 .contentParagraph h3 {
+    font-size: 2rem;
+  }
+
+  .contentButton .contentButtonCenter {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentButton .contentButtonCenter button {
+    font-size: 1rem;
+  }
+
+  .contentMid p {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 694px) {
+  .contentContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .contentHead {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: auto;
+    height: auto;
+    margin-right: 0rem;
+  }
+  .contentImage {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    display: grid;
+  }
+  .contentHead2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin-right: 0rem;
+  }
+  .contentButton {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .contentMid {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    display: block;
+  }
+  .contentFooter {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    margin-right: 1em;
+  }
+
+  .contentHead p {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .contentHead h1 {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  .contentImage img {
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+  }
+  .contentHead2 .contentTopic,
+  .contentHead2 .contentParagraph h3 {
+    font-size: 1rem;
+  }
+
+  .contentHead h1 .underline,
+  .contentFooter h2 .underline {
+    text-decoration: underline solid 0.2rem orange;
+    text-underline-position: under;
+  }
+  .contentButton .contentButtonCenter {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentButton .contentButtonCenter button {
+    cursor: pointer;
+    width: auto;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    outline: none;
+    border: none;
+  }
+
+  .contentButton button:nth-child(1) {
+    background-color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    padding-left: 0.01rem;
+    padding-right: 0.01rem;
+  }
+  .contentButton button:nth-child(2) {
+    background-color: white;
+    color: royalblue;
+    border-top: 0.1rem solid royalblue;
+    border-bottom: 0.1rem solid royalblue;
+    border-right: 0.1rem solid royalblue;
+    padding-left: 0.01rem;
+    padding-right: 0.01rem;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .contentMid p {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contentFooter h2,
+  .contentFooter .contentParagraph2 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contentFooter h2 {
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1rem;
+  }
+  .contentFooter p {
+    font-size: 1rem;
+  }
+  .logoDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoDown img {
+    padding-right: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+}
+
+/* @media screen and (min-width: 360px) and (max-width: 737px) {
+  .contentContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .contentHead {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .contentImage {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .contentHead2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .contentButton {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .contentMid {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    display: block;
+  }
+  .contentFooter {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+
+  .contentHead p {
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+  .contentHead h1 {
+    font-weight: bolder;
+    font-size: 2.4rem;
+  }
+  .contentImage img {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+  }
+  .contentHead2 .contentTopic,
+  .contentHead2 .contentParagraph h3 {
+    font-size: 1.5rem;
+  }
+
+  .contentButton .contentButtonCenter {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentButton .contentButtonCenter button {
+    font-size: 0.79rem;
+  }
+
+  .contentMid p {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+  .logoDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoDown img{
+    width: 1.5rem;
+  }
+} */

@@ -1,0 +1,69 @@
+.contentBadgeContainer {
+  box-sizing: border-box;
+  border: 0.12rem solid silver;
+  width: 24rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  background-color: transparent;
+  border-radius: 3%;
+}
+
+.contentBadgeContainer h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contentBadgeContainer .badgeImageAdjust {
+  display: flex;
+  justify-content: center;
+}
+
+.contentBadgeContainer .badgeImageAdjust img {
+  display: block;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.contentBadgeContainer p {
+  font-size: 1.1rem;
+  color: silver;
+}
+
+.badgeLearnMore {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.badgeLearnMore a {
+  font-size: 1.3rem;
+  color: royalblue;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+.badgeLearnMore img {
+  display: inline;
+  align-items: center;
+}
+@media screen and (max-width: 1003px) {
+  .contentBadgeContainer {
+    width: 20rem;
+    font-size: 0.1rem;
+  }
+}
+@media screen and (max-width: 928px) {
+  .contentBadgeContainer {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .contentBadgeContainer {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 694px){
+  .contentBadgeContainer {
+    width: 15rem;
+  }
+}

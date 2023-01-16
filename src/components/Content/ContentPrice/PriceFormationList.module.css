@@ -1,0 +1,13 @@
+.list {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+.list img {
+  margin-right: 0.12rem;
+  width: auto;
+}
+.list p {
+  /* color: royalblue; */
+}

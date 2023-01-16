@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/* CSS for the Navigation Box*/
+.navContainer {
+  background-color: transparent;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navLogo toggle navLinks navButton"
+    "navSearch";
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.navLogo {
+  grid-area: navLogo;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.toggle {
+  display: none;
+  grid-area: toggle;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 1rem;
+}
+.mobileNavLinks {
+  display: none;
+}
+.navLinks {
+  grid-area: navLinks;
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background-color: transparent;
+}
+
+.navLogo img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navLinks,
+.navLinks ul li,
+.navLinks ul li a {
+  float: left;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.navLinks ul li {
+  list-style-type: none;
+}
+
+.navLinks ul li a {
+  margin: 0.8rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: gray;
+  cursor: pointer;
+}
+.navLinks ul li:last-child {
+  margin-right: 1.2rem;
+}
+.navButtonHide {
+  display: none;
+}
+.navButton {
+  grid-area: navButton;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  justify-content: end;
+}
+
+.navButton button {
+  display: flex;
+  width: 14rem;
+  height: 4rem;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  background-color: royalblue;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+/* CSS for the Search Box*/
+.SearchBox {
+  background-color: transparent;
+  grid-area: navSearch;
+  grid-row: 2/3;
+  grid-column: 1/5;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.Search {
+  display: flex;
+  float: right;
+  width: auto;
+  height: auto;
+  border: 0.2rem solid royalblue;
+  border-radius: 0.3rem;
+}
+.Search button {
+  padding-right: 0.5rem;
+  padding-left: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: royalblue;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.Search input {
+  width: 20.5rem;
+  height: 3.5rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.35rem;
+  caret-color: royalblue;
+}
+.Search input::placeholder {
+  color: royalblue;
+  opacity: 100%;
+  font-weight: 500;
+  padding-left: 1rem;
+}
+
+.Search input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 946px) {
+  .navLinks ul li a {
+    margin: 0.8rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: gray;
+    cursor: pointer;
+  }
+  .navLinks ul li:last-child {
+    margin-right: 1rem;
+  }
+
+  .navButton button {
+    display: flex;
+    width: 12rem;
+    height: 3.5rem;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    font-family: "Lexend Deca", sans-serif;
+  }
+}
+@media screen and (max-width: 891px) {
+  .navLinks ul li a {
+    margin: 0.5rem;
+    text-decoration: none;
+    font-size: 1.01rem;
+    color: gray;
+    cursor: pointer;
+  }
+  .navLinks ul li:last-child {
+    margin-right: 1rem;
+  }
+
+  .navButton button {
+    display: flex;
+    width: 10rem;
+    height: 3rem;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.01rem;
+    font-family: "Lexend Deca", sans-serif;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .navLinks ul li a {
+    margin: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: gray;
+    cursor: pointer;
+  }
+  .navLinks ul li:last-child {
+    margin-right: 1rem;
+  }
+
+  .navButton button {
+    display: flex;
+    width: 9rem;
+    height: 3rem;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .navContainer {
+    background-color: transparent;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .navLogo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: transparent;
+    justify-content: center;
+  }
+  .navLinks {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .mobileNavLinks {
+    display: block;
+    grid-area: navLinks;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-color: transparent;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .mobileNavLinks ul li {
+    margin-bottom: 1rem;
+  }
+  .mobileNavLinks ul {
+    list-style: none;
+  }
+  .mobileNavLinks ul li a {
+    text-decoration: none;
+    font-size: 1.35rem;
+    color: gray;
+    cursor: pointer;
+  }
+  .navButton {
+    display: none;
+  }
+  .navButtonHide {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .navButtonHide button {
+    display: grid;
+    width: 14rem;
+    height: 4rem;
+    float: right;
+    place-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.35rem;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .SearchBox {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: grid;
+    place-items: center;
+  }
+
+  .Search button {
+    padding: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: royalblue;
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .Search input {
+    width: 20.5rem;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.35rem;
+    caret-color: royalblue;
+  }
+  .Search input::placeholder {
+    color: royalblue;
+    opacity: 100%;
+    font-weight: 500;
+    padding-left: 1rem;
+  }
+
+  .Search input:focus {
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 694px) {
+  .navContainer {
+    background-color: transparent;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .navLogo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: transparent;
+    justify-content: center;
+  }
+  .navLinks {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .mobileNavLinks {
+    display: block;
+    grid-area: navLinks;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-color: transparent;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .mobileNavLinks ul li {
+    margin-bottom: 1rem;
+  }
+  .mobileNavLinks ul {
+    list-style: none;
+  }
+  .mobileNavLinks ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: gray;
+    cursor: pointer;
+  }
+  .navButton {
+    display: none;
+  }
+  .navButtonHide {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .navButtonHide button {
+    display: grid;
+    width: 12rem;
+    height: 2rem;
+    float: right;
+    place-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .SearchBox {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: grid;
+    place-items: center;
+  }
+
+  .Search button {
+    padding: 0.8rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: royalblue;
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .Search input {
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    caret-color: royalblue;
+  }
+  .Search input::placeholder {
+    color: royalblue;
+    opacity: 100%;
+    font-weight: 500;
+    padding-left: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .Search input:focus {
+    outline: none;
+  }
+}

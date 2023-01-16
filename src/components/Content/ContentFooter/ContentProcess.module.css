@@ -1,0 +1,49 @@
+.ContentProcessContainer {
+  display: flex;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+}
+
+.VectorLogo img {
+  padding: 1rem;
+  border: 0.2rem solid royalblue;
+  border-radius: 8%;
+}
+
+.ContentProcessHead {
+  width: 100%;
+  margin-left: 1rem;
+  font-weight: 600;
+  padding-right: 4rem;
+  font-size: 1.2rem;
+}
+
+.bottomLine {
+  color: royalblue;
+  margin-top: 1rem;
+}
+.ContentProcessContainer:hover {
+  background-color: royalblue;
+  color: white;
+  border-radius: 5%;
+}
+@media screen and (max-width: 786px) {
+  .VectorLogo img {
+    border: 0.2rem solid royalblue;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 694px){
+  .ContentProcessHead {
+    width: 100%;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+  .VectorLogo img {
+    border: 0.2rem solid royalblue;
+    padding: 0.5rem;
+  }
+}

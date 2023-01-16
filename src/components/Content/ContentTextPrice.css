@@ -1,0 +1,54 @@
+.TextPrice {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.TextPrice h2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 22rem;
+  margin-right: 22rem;
+  background-color: transparent;
+}
+
+.TextPrice span {
+  text-decoration: underline solid 0.45rem orange;
+  text-underline-position: under;
+}
+@media screen and (max-width: 1083px) {
+  .TextPrice h2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color: transparent;
+    font-size: 1.8rem;
+  }
+  .TextPrice span {
+    text-decoration: underline solid 0.45rem orange;
+    text-underline-position: under;
+  }
+}
+
+@media screen and (max-width: 1004px) {
+  .TextPrice h2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+  }
+  .TextPrice span {
+    text-decoration: underline solid 0.45rem orange;
+    text-underline-position: under;
+  }
+}
+@media screen and (max-width: 786px) {
+  .TextPrice {
+    display: none;
+  }
+}
+
