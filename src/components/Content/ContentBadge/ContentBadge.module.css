@@ -43,6 +43,7 @@
   margin-right: 0.5rem;
 }
 .badgeLearnMore img {
+  width: auto;
   display: inline;
   align-items: center;
 }
