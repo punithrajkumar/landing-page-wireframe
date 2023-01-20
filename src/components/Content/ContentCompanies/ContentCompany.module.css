@@ -4,10 +4,10 @@
   align-items: left;
 }
 
-.contentCompany h2,
+/* .contentCompany h2,
 .contentCompany img,
 .contentCompany p {
-}
+} */
 
 .contentCompany h2 {
   font-size: 1.3rem;
